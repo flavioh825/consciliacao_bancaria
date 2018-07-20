@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root to: 'rates#calcular'
   resources :rates
   get "calcula/taxa", to: "rates#calcular"
   post "calcula/taxa", to: "rates#calculo"
