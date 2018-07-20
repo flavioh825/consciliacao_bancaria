@@ -1,0 +1,9 @@
+<h1>Cálculo</h1>
+<p id="notice"><%= notice %></p>
+  <%= form_tag(calcula_taxa_path, method: :post) do %>
+    <%= label_tag "Digite o valor:" %>
+    <%= text_field_tag "total" %>
+    <%= submit_tag "calcular" %>
+  <% end %>
+
+<%= link_to 'Back', rates_path %>
