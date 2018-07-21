@@ -1,12 +1,12 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Rates</h1>
+<h1>Taxas</h1>
 
 <table>
   <thead>
     <tr>
-      <th>Description</th>
-      <th>Value</th>
+      <th>Descrição</th>
+      <th>Valor</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -16,9 +16,9 @@
       <tr>
         <td><%= rate.description %></td>
         <td><%= rate.value %></td>
-        <td><%= link_to 'Show', rate %></td>
-        <td><%= link_to 'Edit', edit_rate_path(rate) %></td>
-        <td><%= link_to 'Destroy', rate, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Visualizar', rate %></td>
+        <td><%= link_to 'Editar', edit_rate_path(rate) %></td>
+        <td><%= link_to 'Deletar', rate, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -26,4 +26,4 @@
 
 <br>
 
-<%= link_to 'New Rate', new_rate_path %>
+<%= link_to 'Nova Taxa', new_rate_path %> | <%= link_to 'Calcular', calcula_taxa_path %>
